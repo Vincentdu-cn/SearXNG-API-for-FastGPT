@@ -2,7 +2,7 @@ FROM python:3.11-alpine
 
 WORKDIR /app
 
-ENV SEARXNG_API="http://192.168.199.110:10000/search"
+ENV SEARXNG_API="http://192.168.199.110:22222/search"
 
 ADD ./requirements.txt /app/requirements.txt
 
