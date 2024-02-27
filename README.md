@@ -1,2 +1,2 @@
 # SearXNG-api
-SearXNG-api fork from SearXNG
+SearXNG搜索结果优化，只提取url和content内容，通过Fastgpt中HTTP请求模块作为提示词prompt给AI。
