@@ -3,7 +3,7 @@ import requests
 import json
 
 app = FastAPI()
-
+SEARXNG_API = "http://192.168.199.110:22222/search"
 @app.get("/api")
 async def api(request: Request):
   """
@@ -30,7 +30,7 @@ async def api(request: Request):
   }
 
   # 发送请求
-  response = requests.get("http://192.168.199.110:22222/search", params=params)
+  response = requests.get(SEARXNG_API, params=params)
 
   # 检查响应状态码
   if response.status_code == 200:
