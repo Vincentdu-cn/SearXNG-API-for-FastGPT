@@ -1,9 +1,12 @@
 from fastapi import FastAPI, Request, HTTPException
 import requests
 import json
+import os
 
 app = FastAPI()
-SEARXNG_API = "http://192.168.199.110:22222/search"
+# 传入SearXNG API的URL
+SEARXNG_API = os.getenv(“SEARXNG_API”)
+
 @app.get("/api")
 async def api(request: Request):
   """
