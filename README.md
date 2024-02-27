@@ -4,7 +4,7 @@ SearXNG搜索结果优化，只提取url和content内容，通过Fastgpt中HTTP�
 ## docker build
 
 ```bash
-git clone https://github.com/Vincentdu-cn/SearXNG-api.git
+git clone https://github.com/Vincentdu-cn/SearXNG-API-for-FastGPT.git
 docker build -t search-api .
 ```
 
